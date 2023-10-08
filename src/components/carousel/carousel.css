@@ -1,0 +1,73 @@
+.wrapper {
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+
+.wrapper .carousel {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: nowrap;
+    scroll-behavior: smooth;
+}
+
+.carousel .item {
+    flex-shrink: 0;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    /* object-fit: cover; */
+    margin-left: 14px;
+    width: calc(100% / 5.5);
+    display: grid;
+    position: relative;
+    padding-bottom: 2rem;
+}
+
+.carousel .item:first-child {
+    margin-left: 0px;
+}
+
+@media screen and (max-width: 900px) {
+    .carousel .item {
+        width: calc(100% / 2);
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .carousel .item {
+        width: 100%;
+    }
+}
+
+.item .car-image {
+    width: 100%;
+    aspect-ratio: 4/3;
+}
+
+.item h4 {
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 500;
+    max-width: 90%;
+}
+
+.item .more {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item .more p {
+    color: black;
+}
+
+.item .more img {
+    filter: invert(100%);
+}
+
+.sotioal-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+}

@@ -1,0 +1,124 @@
+.main-section {
+    background-image: url('images/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 20px;
+    min-height: calc(100svh - 40px);
+    max-height: 1080px;
+    border-radius: 3.5rem;
+    padding: 3.5rem 5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 8.875rem;
+    height: 1.625rem;
+}
+
+.left-side {
+    display: flex;
+    align-items: center;
+    gap: 3.5rem;
+}
+
+.menu-button {
+    padding: 0.85rem;
+    background-color: var(--primary);
+    border-radius: 0.5rem;
+    user-select: none;
+    display: flex;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+
+.menu-button:hover {
+    background-color: var(--hovered-primary);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 4.5rem;
+}
+
+ul {
+    display: flex;
+    gap: 3.5rem;
+}
+
+.divider {
+    width: 100%;
+    height: 2px;
+    background: #282828;
+    margin-top: 3rem;
+}
+
+main {
+    /* padding-top: 7rem;
+    padding-bottom: 7rem; */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+main h1 {
+    width: 50%;
+    font-size: 4rem;
+    font-weight: 500;
+    line-height: 4.4rem;
+}
+
+.buttons {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.entry {
+    background: #FF001D;
+    border-radius: 1rem;
+    border-style: none;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    cursor: pointer;
+}
+
+.entry:hover {
+    background-color: var(--hovered-primary);
+}
+
+.consultation {
+    background: transparent;
+    border-radius: 1rem;
+    border: 2px solid rgba(255, 255, 255, 0.20);
+    padding: 1rem 2rem;
+    display: flex;
+    gap: 0.3rem;
+    align-items: center;
+    color: white;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    cursor: pointer;
+}
+
+.consultation:hover {
+    background-color: rgba(255, 255, 255, 0.10);
+}
